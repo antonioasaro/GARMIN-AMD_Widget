@@ -1,5 +1,6 @@
 <layout id="MainLayout">
-    <label  x="66"   y="54"  id="id_dollar"  text='$'      font="Gfx.FONT_LARGE"      color="Gfx.COLOR_GREEN" justification="Gfx.TEXT_JUSTIFY_RIGHT"></label>
-    <label  x="154"  y="36"  id="id_stock"   text='$--.--' font="Gfx.FONT_NUMBER_HOT" color="Gfx.COLOR_GREEN" justification="Gfx.TEXT_JUSTIFY_RIGHT"></label>
-    <bitmap x="38"   y="94"  id="id_monkey"   filename="../drawables/amd_logo_final.png"></bitmap>
+    <bitmap x="92"     y="18"    id="id_chart"    filename="../drawables/chart-color.png" ></bitmap>
+    <label  x="65"     y="66"    id="id_dollar"   text='$'      font="Gfx.FONT_LARGE"      color="Gfx.COLOR_GREEN" justification="Gfx.TEXT_JUSTIFY_RIGHT"></label>
+    <label  x="152"    y="49"    id="id_stock"    text='$--.--' font="Gfx.FONT_NUMBER_HOT" color="Gfx.COLOR_GREEN" justification="Gfx.TEXT_JUSTIFY_RIGHT"></label>
+    <bitmap x="38"     y="108"   id="id_monkey"   filename="../drawables/amd_logo_final.png"></bitmap>
 </layout>
