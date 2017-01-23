@@ -4,6 +4,7 @@ using Toybox.Graphics as Gfx;
 using Toybox.Communications as Comm;
 
 class AMD_WidgetView extends Ui.View {
+    var font;
 
     function initialize() {
         View.initialize();
@@ -11,8 +12,10 @@ class AMD_WidgetView extends Ui.View {
 
     // Load your resources here
     function onLayout(dc) {
-    	makeStockRequest();
+        font = Ui.loadResource(Rez.Fonts.id_font);
         setLayout(Rez.Layouts.MainLayout(dc));
+    
+    	makeStockRequest();
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -40,7 +43,8 @@ class AMD_WidgetView extends Ui.View {
         if (responseCode == 200) {
         	Sys.println("Stock response data: " + data);
            	var price = data["price"]; 
-        	stockView.setText(price);
+        	stockView.setText("$" + price);
+        	stockView.setFont(font);
        		stockView.setColor(Gfx.COLOR_GREEN);
         } else {
            	Sys.println("Failed to load stocks\nError: " + responseCode.toString());
