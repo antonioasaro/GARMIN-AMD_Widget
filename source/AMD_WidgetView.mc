@@ -56,7 +56,7 @@ class AMD_WidgetView extends Ui.View {
     // Make the stock web request
     function makeStockRequest() {
         Sys.println("Antonio - makeStockRequest");
-		Comm.makeWebRequest("http://www.asarotools.com/stockprice.php", {"stock" => "NYSE:AMD"}, {}, method(:onStockReceive));
+		Comm.makeWebRequest("http://www.asarotools.com/stockprice.php", {"stock" => "AMD"}, {}, method(:onStockReceive));
     }
     
 
